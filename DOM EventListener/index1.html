@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>html</title>
+</head>
+<body>
+  <p id="pid">Hello</p>
+  <button onclick="demo()">按钮</button>
+  <script type="text/javascript">
+    // function demo() {
+    //   document.write("world");
+    // }//绝对不要在文档加载完成之后使用document.write()，这会覆盖该文档
+
+    function demo() {
+      document.getElementById("pid").innerHTML = "world";
+      // document.getElementsByTagName("p"); //相同元素中的第一个
+    }
+  </script>
+</body>
+</html>
